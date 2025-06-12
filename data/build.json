@@ -1,0 +1,150 @@
+{
+  "priceByQty": [
+    {
+      "qty": 3,
+      "price": 9900,
+      "priceTwice": 20900
+    },
+    {
+      "qty": 4,
+      "price": 10900,
+      "priceTwice": 22900
+    },
+    {
+      "qty": 5,
+      "price": 11900,
+      "priceTwice": 24900
+    }
+  ],
+  "ingredients": {
+    "base": {
+      "title": "Base",
+      "options": [
+        {
+          "name": "Mozzarella",
+          "image": "/images/ingredients/mozzarella.png"
+        },
+        {
+          "name": "Oregano",
+          "image": "/images/ingredients/oregano.png"
+        },
+        {
+          "name": "Salsa",
+          "image": "/images/ingredients/salsa-de-tomate.png"
+        }
+      ]
+    },
+    "vegetal": {
+      "title": "Vegetales",
+      "price": 1000,
+      "options": [
+        {
+          "name": "Tomate",
+          "image": "/images/ingredients/tomate.png"
+        },
+        {
+          "name": "Aceituna",
+          "image": "/images/ingredients/aceituna.png"
+        },
+        {
+          "name": "Champiñon",
+          "image": "/images/ingredients/champinon.png"
+        },
+        {
+          "name": "Choclo",
+          "image": "/images/ingredients/choclo.png"
+        },
+        {
+          "name": "Pimenton",
+          "image": "/images/ingredients/pimenton.png"
+        },
+        {
+          "name": "Cebollin",
+          "image": "/images/ingredients/cebollin.png"
+        },
+        {
+          "name": "Palmitos",
+          "image": "/images/ingredients/palmitos.png"
+        },
+        {
+          "name": "Cebolla",
+          "image": "/images/ingredients/cebolla.png"
+        },
+        {
+          "name": "Piña",
+          "image": "/images/ingredients/pina.png"
+        }
+      ]      
+    },
+    "meat": {
+      "title": "Carnes",
+      "price": 1000,
+      "options": [
+        {
+          "name": "Choricillo",
+          "image": "/images/ingredients/choricillo.png"
+        },
+        {
+          "name": "Salame",
+          "image": "/images/ingredients/salame.png"
+        },
+        {
+          "name": "Jamón",
+          "image": "/images/ingredients/jamon.png"
+        },
+        {
+          "name": "Pollo",
+          "image": "/images/ingredients/pollo.png"
+        },
+        {
+          "name": "Carne",
+          "image": "/images/ingredients/carne.png"
+        },
+        {
+          "name": "Pepperoni",
+          "image": "/images/ingredients/pepperoni.png"
+        },
+        {
+          "name": "Tocino",
+          "image": "/images/ingredients/tocino.png"
+        },
+        {
+          "name": "Salchicha",
+          "image": "/images/ingredients/salchicha.png"
+        }
+      ]
+    },
+    "sauce": {
+      "title": "Salsas",
+      "price": 1000,
+      "options": [
+        {
+          "name": "Salsa BBQ",
+          "image": "/images/ingredients/salsa-bbq.png"
+        },
+        {
+          "name": "Salsa Golf",
+          "image": "/images/ingredients/salsa-golf.png"
+        },
+        {
+          "name": "Crema",
+          "image": "/images/ingredients/crema.png"
+        },
+        {
+          "name": "Extra Queso",
+          "image": "/images/ingredients/extra-queso.png"
+        }
+      ]
+    },
+    "special": {
+      "title": "Especiales",
+      "price": 2000,
+      "options": [
+        {
+          "name": "Camarón",
+          "image": "/images/ingredients/camaron.png"
+        }
+      ]
+    }
+  }
+}
