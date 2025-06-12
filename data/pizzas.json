@@ -36,7 +36,7 @@
     "name": "Tradicional",
     "ingredients": "Tomates, Champiñón, Pimentón, Jamón, Aceitunas.",
     "price": 9900,
-    "priceTwice": 19700,
+    "priceTwice": 19500,
     "image": "/images/pizzas/jamon-queso.jpg" ,
     "group": 2
   },
@@ -44,7 +44,7 @@
     "name": "Vegetariana",
     "ingredients": "Tomates, Champiñón, Pimentón, Choclo, Aceitunas, Cebollín.",
     "price": 9900,
-    "priceTwice": 19700,
+    "priceTwice": 19500,
     "image": "/images/pizzas/vegetariana.jpg",
     "group": 2
   },
@@ -52,7 +52,7 @@
     "name": "Hawaiana",
     "ingredients": "Jamón, Piña.",
     "price": 9900,
-    "priceTwice": 19700,
+    "priceTwice": 19500,
     "image": "/images/pizzas/hawaiana.jpg",
     "group": 2
   },
@@ -60,7 +60,7 @@
     "name": "Española",
     "ingredients": "Tomates, Pimentón, Choricillo, Jamón.",
     "price": 9900,
-    "priceTwice": 19700,
+    "priceTwice": 19500,
     "image": "/images/pizzas/espanola.jpg",
     "featured": true,
     "group": 2
