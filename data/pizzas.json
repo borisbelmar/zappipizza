@@ -2,8 +2,8 @@
   {
     "name": "Napolitana",
     "ingredients": "Tomate, Choricillo, Aceitunas.",
-    "price": 8500,
-    "priceTwice": 16700,
+    "price": 8900,
+    "priceTwice": 17500,
     "image": "/images/pizzas/napolitana.jpg",
     "featured": true,
     "group": 1
@@ -11,56 +11,56 @@
   {
     "name": "Clásica",
     "ingredients": "Tomates, Jamón, Aceitunas.",
-    "price": 8500,
-    "priceTwice": 16700,
+    "price": 8900,
+    "priceTwice": 17500,
     "image": "/images/pizzas/clasica.jpg",
     "group": 1
   },
   {
     "name": "SoloQueso/Jamón",
     "ingredients": "Doble Queso (o jamón)",
-    "price": 8500,
-    "priceTwice": 16700,
+    "price": 8900,
+    "priceTwice": 17500,
     "image": "/images/pizzas/solo-queso.jpg",
     "group": 1
   },
   {
     "name": "Pepperoni",
     "ingredients": "Pepperoni",
-    "price": 8500,
-    "priceTwice": 16700,
+    "price": 8900,
+    "priceTwice": 17500,
     "image": "/images/pizzas/pepperoni.jpg",
     "group": 1
   },
   {
     "name": "Tradicional",
     "ingredients": "Tomates, Champiñón, Pimentón, Jamón, Aceitunas.",
-    "price": 9500,
-    "priceTwice": 18700,
+    "price": 9900,
+    "priceTwice": 19700,
     "image": "/images/pizzas/jamon-queso.jpg" ,
     "group": 2
   },
   {
     "name": "Vegetariana",
     "ingredients": "Tomates, Champiñón, Pimentón, Choclo, Aceitunas, Cebollín.",
-    "price": 9500,
-    "priceTwice": 18700,
+    "price": 9900,
+    "priceTwice": 19700,
     "image": "/images/pizzas/vegetariana.jpg",
     "group": 2
   },
   {
     "name": "Hawaiana",
     "ingredients": "Jamón, Piña.",
-    "price": 9500,
-    "priceTwice": 18700,
+    "price": 9900,
+    "priceTwice": 19700,
     "image": "/images/pizzas/hawaiana.jpg",
     "group": 2
   },
   {
     "name": "Española",
     "ingredients": "Tomates, Pimentón, Choricillo, Jamón.",
-    "price": 9500,
-    "priceTwice": 18700,
+    "price": 9900,
+    "priceTwice": 19700,
     "image": "/images/pizzas/espanola.jpg",
     "featured": true,
     "group": 2
@@ -68,8 +68,8 @@
   {
     "name": "Calabrezza",
     "ingredients": "Tomates, Champiñón, Salame, Aceitunas.",
-    "price": 9900,
-    "priceTwice": 19500,
+    "price": 10500,
+    "priceTwice": 20700,
     "image": "/images/pizzas/calabrezza.jpg",
     "featured": true,
     "group": 3
@@ -77,56 +77,56 @@
   {
     "name": "Pollo",
     "ingredients": "Tomates, Champiñón, Pimentón, Pollo, Cebollín.",
-    "price": 9900,
-    "priceTwice": 19500,
+    "price": 10500,
+    "priceTwice": 20700,
     "image": "/images/pizzas/pollo.jpg",
     "group": 3
   },
   {
     "name": "Doble Pepperoni",
     "ingredients": "Doble Pepperoni.",
-    "price": 9900,
-    "priceTwice": 19500,
+    "price": 10500,
+    "priceTwice": 20700,
     "image": "/images/pizzas/doble-pepperoni.jpg",
     "group": 3
   },
   {
     "name": "Italiana",
     "ingredients": "Pepperoni, Champiñón, Salchicha, Aceitunas.",
-    "price": 9900,
-    "priceTwice": 19500,
+    "price": 10500,
+    "priceTwice": 20700,
     "image": "/images/pizzas/italiana.jpg",
     "group": 3
   },
   {
     "name": "Bacon",
     "ingredients": "Champiñón, Tocino, Jamón, Choricillo, Cebollín.",
-    "price": 10900,
-    "priceTwice": 21500,
+    "price": 11500,
+    "priceTwice": 22700,
     "image": "/images/pizzas/bacon.jpg",
     "group": 4
   },
   {
     "name": "Barbecue",
     "ingredients": "Salsa BBQ, Cebolla Frita, Tocino, Carne.",
-    "price": 10900,
-    "priceTwice": 21500,
+    "price": 11500,
+    "priceTwice": 22700,
     "image": "/images/pizzas/barbecue.jpg",
     "group": 4
   },
   {
     "name": "Todas las carnes",
     "ingredients": "Pepperoni, Jamón, Tocino, Carne.",
-    "price": 10900,
-    "priceTwice": 21500,
+    "price": 11500,
+    "priceTwice": 22700,
     "image": "/images/pizzas/todas-carnes.jpg",
     "group": 4
   },
   {
     "name": "Suprema",
     "ingredients": "Tomate, Salame, Pollo, Salchicha, Cebollín.",
-    "price": 10900,
-    "priceTwice": 21500,
+    "price": 11500,
+    "priceTwice": 22700,
     "image": "/images/pizzas/suprema.jpg",
     "featured": true,
     "group": 4
@@ -134,32 +134,32 @@
   {
     "name": "Strogonoff",
     "ingredients": "Champiñón, Pimentón, Pollo, Crema, Choclo, Cebollín.",
-    "price": 11900,
-    "priceTwice": 23500,
+    "price": 12500,
+    "priceTwice": 24700,
     "image": "/images/pizzas/strogonoff.jpg",
     "group": 5
   },
   {
     "name": "Alemana",
     "ingredients": "Champiñón, Salame, Jamón, Tocino, Carne.",
-    "price": 11900,
-    "priceTwice": 23500,
+    "price": 12500,
+    "priceTwice": 24700,
     "image": "/images/pizzas/alemana.jpg",
     "group": 5
   },
   {
     "name": "Deluxe",
     "ingredients": "Champiñón, Pimentón, Choricillo, Tocino, Carne, Aceitunas.",
-    "price": 11900,
-    "priceTwice": 23500,
+    "price": 12500,
+    "priceTwice": 24700,
     "image": "/images/pizzas/deluxe.jpg",
     "group": 5
   },
   {
     "name": "Camarón",
     "ingredients": "Camarón, Jamón, Pollo, Crema, Choclo, Cebollín.",
-    "price": 11900,
-    "priceTwice": 23500,
+    "price": 12500,
+    "priceTwice": 24700,
     "image": "/images/pizzas/camaron.jpg",
     "group": 5
   }
