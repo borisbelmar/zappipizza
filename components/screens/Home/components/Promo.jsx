@@ -48,21 +48,21 @@ const slides = [
       />
     )
   },
-  {
-    id: 4,
-    Component: (
-      <Image
-        src="/images/slides/promo-4.jpg"
-        alt="Promoción"
-        width={1920}
-        height={1080}
-        className="w-full object-cover aspect-[2/1] md:aspect-auto"
-        placeholder="blur"
-        blurDataURL="/images/slides/promo-4.jpg"
-        priority
-      />
-    )
-  },
+  // {
+  //   id: 4,
+  //   Component: (
+  //     <Image
+  //       src="/images/slides/promo-4.jpg"
+  //       alt="Promoción"
+  //       width={1920}
+  //       height={1080}
+  //       className="w-full object-cover aspect-[2/1] md:aspect-auto"
+  //       placeholder="blur"
+  //       blurDataURL="/images/slides/promo-4.jpg"
+  //       priority
+  //     />
+  //   )
+  // },
   {
     id: 5,
     Component: (

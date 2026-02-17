@@ -11,6 +11,8 @@ export default function PriceIngredients({ priceByQty }) {
             qty={ingredient.qty}
             price={ingredient.price}
             priceTwice={ingredient.priceTwice}
+            priceXl={ingredient.priceXl}
+            priceXlTwice={ingredient.priceXlTwice}
           />
         ))}
       </ul>

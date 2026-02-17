@@ -8,7 +8,7 @@ export default function PizzaCard({
   name,
   ingredients,
   price,
-  priceTwice,
+  priceXl,
   image,
   secondary,
   priority
@@ -34,13 +34,23 @@ export default function PizzaCard({
           </h3>
           <p>{ingredients}</p>
         </div>
-        <div className="mb-4">
-          <p className="text-2xl">
-            {formatPrice(price)}
-          </p>
-          <p className={clsx('text-2xl font-bold', titleColor)}>
-            2x {formatPrice(priceTwice)}
-          </p>
+        <div className="mb-4 flex gap-8">
+          <div>
+            <h6 className={clsx('uppercase text-xs', titleColor)}>
+              Familiar:
+            </h6>
+            <p className="text-2xl font-bold">
+              {formatPrice(price)}
+            </p>
+          </div>
+          <div>
+            <h6 className={clsx('uppercase text-xs', titleColor)}>
+              XL (38cm):
+            </h6>
+            <p className="text-2xl font-bold">
+              {formatPrice(priceXl)}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -52,7 +62,7 @@ PizzaCard.propTypes = {
   name: PropTypes.string.isRequired,
   ingredients: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  priceTwice: PropTypes.number.isRequired,
+  priceXl: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
   secondary: PropTypes.bool,
   priority: PropTypes.bool

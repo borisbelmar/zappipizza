@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Tradicionales",
+    "slug": "tradicionales",
+    "price": 9900,
+    "priceTwice": 19500,
+    "priceXl": 14900
+  },
+  {
+    "id": 2,
+    "name": "Especiales",
+    "slug": "especiales",
+    "price": 11900,
+    "priceTwice": 23500,
+    "priceXl": 16900
+  },
+  {
+    "id": 3,
+    "name": "Premium",
+    "slug": "premium",
+    "price": 12900,
+    "priceTwice": 25500,
+    "priceXl": 17900
+  }
+]
