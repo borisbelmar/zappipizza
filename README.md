@@ -1,34 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Zappipizza
 
-## Getting Started
+Sitio de una pizzería (Pudahuel Sur, Chile). Catálogo estático, sin carro ni checkout:
+el pedido sale del sitio hacia **UberEats** por link externo.
 
-First, run the development server:
+Next.js 13 (pages router) + React 18 + Tailwind. Sin backend, sin base de datos, sin API routes.
+
+## Correr el proyecto
 
 ```bash
-npm run dev
-# or
-yarn dev
+yarn          # instala (y husky install vía "prepare")
+yarn dev      # http://localhost:3000
+yarn build && yarn start
+yarn lint     # next lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`.husky/pre-push` corre `yarn lint --fix` antes de cada push.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Rutas
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+| Ruta | Página | Pantalla | Datos |
+|---|---|---|---|
+| `/` | `pages/index.jsx` | `components/screens/Home` | 4 pizzas con `featured: true` |
+| `/menu` | `pages/menu.jsx` | `components/screens/Menu` | `pizzas.json` + `groups.json` |
+| `/pizza-build` | `pages/pizza-build.jsx` | `components/screens/PizzaBuild` | `build.json` |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Las tres usan `getServerSideProps` para leer JSON local (no hay fuente remota).
 
-## Learn More
+## Estructura
 
-To learn more about Next.js, take a look at the following resources:
+```
+pages/               rutas + getServerSideProps; _app (Head global + globals.css), _document
+components/
+  layouts/           DefaultLayout: <Navigation> + children + <Footer>
+  common/            Header, Navigation, MobileMenuModal, PizzaCard, Slider,
+                     UberEatsButton, UberEatsLogo, Footer
+  screens/
+    Home/            Promo (slider) → DeliveryInfo → FeaturedPizzas → ServiceHours → Location
+    Menu/            PizzaGrid: una sección por grupo
+    PizzaBuild/      PriceIngredients (precio por nº de ingredientes),
+                     BaseIngredients, ChoiceIngredients (vegetal/meat/sauce/special)
+data/                pizzas.json, groups.json, build.json  ← todo el contenido editable
+utils/               cn.js (twMerge + clsx), formatPrice.js (CLP, es-CL)
+styles/globals.css   Tailwind + clase .container
+public/images/       fotos de pizzas, ingredientes, slides
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Modelo de datos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**`groups.json`** — define los precios. Cada grupo: `id`, `name`, `slug`, `price` (32cm),
+`priceTwice` (2x 32cm), `priceXl` (38cm).
 
-## Deploy on Vercel
+**`pizzas.json`** — `name`, `ingredients` (string), `image`, `group` (fk a groups), `featured?`.
+Sin `id`: se asigna en runtime con el índice del array (`idx + 1`) y es el número que se muestra
+en la tarjeta. **Reordenar el JSON renumera el menú.**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**`build.json`** — `priceByQty[]` (3/4/5 ingredientes × 32cm/38cm × 1x/2x) e `ingredients`
+con las categorías `base`, `vegetal`, `meat`, `sauce`, `special`, cada una con `title`,
+`price` y `options[{ name, image }]`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Cambiar precios o el menú = editar estos JSON. No hay CMS ni panel.
+
+## Convenciones
+
+- ESLint airbnb + next/core-web-vitals. **Sin punto y coma** (`semi: never`), `arrow-parens: as-needed`.
+- Todos los componentes son funciones con `export default` y `propTypes` obligatorios (airbnb).
+- Aliases de import (`jsconfig.json`): `@components/*`, `@utils/*`. Dentro de una misma pantalla
+  se usan rutas relativas.
+- Estilos solo con clases Tailwind; paleta `primary` (naranja), `secondary` (rojo), `dark`;
+  fuentes `font-display` (Montserrat) y `font-body` (Roboto Slab).
+- Precios siempre a través de `formatPrice`, nunca concatenando `$`.
+
+## Deploy
+
+Build estándar de Next (`yarn build`). `next.config.js` habilita `i.imgur.com` como dominio
+remoto de `next/image` (hoy todas las imágenes son locales) y `reactStrictMode`.
