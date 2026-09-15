@@ -7,6 +7,7 @@ type Props = {
   name: string
   ingredients: string
   price: number
+  priceTwice?: number
   priceXl: number
   image: string
   secondary?: boolean
@@ -18,6 +19,7 @@ export default function PizzaCard({
   name,
   ingredients,
   price,
+  priceTwice,
   priceXl,
   image,
   secondary = false,
@@ -48,6 +50,11 @@ export default function PizzaCard({
           <div>
             <h6 className={clsx('uppercase text-xs', titleColor)}>Familiar:</h6>
             <p className="text-2xl font-bold">{formatPrice(price)}</p>
+            {priceTwice ? (
+              <p className="text-sm font-semibold">
+                2x <span className={titleColor}>{formatPrice(priceTwice)}</span>
+              </p>
+            ) : null}
           </div>
           <div>
             <h6 className={clsx('uppercase text-xs', titleColor)}>XL (38cm):</h6>
