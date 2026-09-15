@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Slab:wght@300;400;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f6a000;
+  --color-primary-50: #ffe3af;
+  --color-primary-100: #ffdc9a;
+  --color-primary-200: #ffcd71;
+  --color-primary-300: #ffbf49;
+  --color-primary-400: #ffb120;
+  --color-primary-500: #f6a000;
+  --color-primary-600: #be7c00;
+  --color-primary-700: #865700;
+  --color-primary-800: #4e3300;
+  --color-primary-900: #160e00;
+
+  --color-secondary: #e93d28;
+  --color-secondary-50: #fad3cf;
+  --color-secondary-100: #f8c3bc;
+  --color-secondary-200: #f4a197;
+  --color-secondary-300: #f18072;
+  --color-secondary-400: #ed5e4d;
+  --color-secondary-500: #e93d28;
+  --color-secondary-600: #c52714;
+  --color-secondary-700: #921d0f;
+  --color-secondary-800: #5f130a;
+  --color-secondary-900: #2c0905;
+
+  --color-dark: #6b7280;
+  --color-dark-50: #a1a6b0;
+  --color-dark-100: #969ba7;
+  --color-dark-200: #7f8694;
+  --color-dark-300: #6b7280;
+  --color-dark-400: #515761;
+  --color-dark-500: #383c43;
+  --color-dark-600: #1e2024;
+  --color-dark-700: #050506;
+  --color-dark-800: #000000;
+  --color-dark-900: #000000;
+
+  --font-display: Montserrat, sans-serif;
+  --font-body: "Roboto Slab", serif;
+}
+
+@utility container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+
+  @media (width >= 48rem) {
+    padding-inline: 2rem;
+  }
+}
+
+/* Aspect ratio de cada slide: cambia en el mismo breakpoint (560px) que
+   decide qué <source> del <picture> se descarga en components/common/Slider.tsx */
+@utility slide-picture {
+  aspect-ratio: var(--slide-ar-desktop);
+
+  @media (width <= 560px) {
+    aspect-ratio: var(--slide-ar-mobile);
+  }
+}
