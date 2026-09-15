@@ -33,3 +33,7 @@ yarn-error.log*
 
 # codegraph
 .codegraph
+
+# typescript
+next-env.d.ts
+*.tsbuildinfo
