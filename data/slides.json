@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "alt": "Promoción",
+    "desktop": {
+      "src": "/images/slides/1-desktop.webp",
+      "width": 1920,
+      "height": 700
+    },
+    "mobile": {
+      "src": "/images/slides/1-mobile.webp",
+      "width": 960,
+      "height": 700
+    }
+  },
+  {
+    "id": 2,
+    "alt": "Promoción",
+    "desktop": {
+      "src": "/images/slides/2-desktop.webp",
+      "width": 1920,
+      "height": 700
+    },
+    "mobile": {
+      "src": "/images/slides/2-mobile.webp",
+      "width": 1469,
+      "height": 1071
+    }
+  },
+  {
+    "id": 3,
+    "alt": "Promoción",
+    "desktop": {
+      "src": "/images/slides/3-desktop.webp",
+      "width": 1920,
+      "height": 700
+    },
+    "mobile": {
+      "src": "/images/slides/3-mobile.webp",
+      "width": 1469,
+      "height": 1071
+    }
+  },
+  {
+    "id": 4,
+    "alt": "Promoción",
+    "desktop": {
+      "src": "/images/slides/4-desktop.webp",
+      "width": 1920,
+      "height": 700
+    },
+    "mobile": {
+      "src": "/images/slides/4-mobile.webp",
+      "width": 1469,
+      "height": 1071
+    }
+  },
+  {
+    "id": 5,
+    "alt": "Promoción",
+    "desktop": {
+      "src": "/images/slides/5-desktop.webp",
+      "width": 1920,
+      "height": 700
+    },
+    "mobile": {
+      "src": "/images/slides/5-mobile.webp",
+      "width": 960,
+      "height": 700
+    }
+  },
+  {
+    "id": 6,
+    "alt": "Promoción",
+    "desktop": {
+      "src": "/images/slides/6-desktop.webp",
+      "width": 1920,
+      "height": 700
+    },
+    "mobile": {
+      "src": "/images/slides/6-mobile.webp",
+      "width": 1469,
+      "height": 1071
+    }
+  }
+]
