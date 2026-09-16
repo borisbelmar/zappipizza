@@ -68,19 +68,5 @@
       "width": 960,
       "height": 700
     }
-  },
-  {
-    "id": 6,
-    "alt": "Promoción",
-    "desktop": {
-      "src": "/images/slides/6-desktop.webp",
-      "width": 1920,
-      "height": 700
-    },
-    "mobile": {
-      "src": "/images/slides/6-mobile.webp",
-      "width": 1469,
-      "height": 1071
-    }
   }
 ]

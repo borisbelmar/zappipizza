@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import Header from '@/components/common/Header'
 import BaseIngredients from '@/components/pizza-build/BaseIngredients'
 import ChoiceIngredients from '@/components/pizza-build/ChoiceIngredients'
-import PriceIngredients from '@/components/pizza-build/PriceIngredients'
+import Hero from '@/components/pizza-build/Hero'
 import { pizzaBuild } from '@/utils/menu'
 
 export const metadata: Metadata = { title: 'Arma tu pizza - Zappipizza' }
@@ -12,12 +11,11 @@ export default function PizzaBuildPage() {
 
   return (
     <>
-      <Header title="Arma tu Pizza Familiar" />
+      <Hero />
       <div
-        className="text-white bg-dark-700"
+        className="text-white bg-dark-700 py-16"
         style={{ backgroundImage: 'url("/images/bg-food-light.png")' }}
       >
-        <PriceIngredients priceByQty={pizzaBuild.priceByQty} />
         <BaseIngredients options={ingredients.base.options} />
         <div className="container flex flex-col gap-4">
           <h2 className="font-display font-bold text-4xl uppercase">INGREDIENTES A ELECCIÓN</h2>
